@@ -1,8 +1,8 @@
-nums1 = [1,2,3,0,0,0]
-m = 3
-nums2 = [2,5,6]
-n = 3
+#Easy
+class Solution:
+    def merge(self, nums1: List[int], m: int, nums2: List[int], n: int) -> None:
+        for i in range(n):
+            nums1[i + m] = nums2[i]
 
-
-
-print(nums1+nums2)
+        # Sort nums1 list in-place.
+        nums1.sort()
