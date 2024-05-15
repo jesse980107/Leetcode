@@ -21,7 +21,7 @@ class Solution:
     # if sum of the gas provided is greater than or equal
     # to the sum of the cost to travel between the stations
     # then there is a solution for sure
-    class Solution:
+class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
         if sum(cost) > sum(gas):
             return -1
