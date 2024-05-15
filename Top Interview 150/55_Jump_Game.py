@@ -17,24 +17,9 @@ class Solution:
 #######################################################
 class Solution:
     def canJump(self, nums: List[int]) -> bool:
-        if len(nums) == 1:
-            return True
-        
-        N = len(nums)
-        # print(N)
-
-        gas = 0
-        for index, n in enumerate(nums):
-            # print(gas, n, index)
-            gas = max(gas - 1, n)
-            # print(gas)
-
-
-            if gas >= (N - (index + 1)):
-                # print('early exit')
-                return True
-
-            if gas <= 0:
-                return False
-
-        return True
+        goal = len(nums)-1
+        for i in range(len(nums)-1,-1,-1):
+            if i+nums[i]>=goal:
+                goal =i
+                print(i,goal)
+        return True if goal==0 else False
