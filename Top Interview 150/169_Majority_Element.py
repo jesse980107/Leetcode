@@ -1,3 +1,5 @@
+#Easy
+#Array / String
 import collections
 
 class Solution:
