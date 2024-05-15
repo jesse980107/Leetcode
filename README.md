@@ -1,7 +1,7 @@
 # [LeetCode](https://leetcode.com/problemset/all/)
 
 ![Language](https://img.shields.io/badge/language-Python%20%2F%20Modern%20C++-orange.svg)&nbsp;
-![Update](https://img.shields.io/badge/update-daily-green.svg)&nbsp;
+![Update](https://img.shields.io/badge/update-daily%20%2F%20weekly-green.svg)&nbsp;
 
 |  #  | Title           | Solution       | Time   | Space  | Difficulty | Note |
 |------|-----------------|----------------|--------|---------|------------|------|
