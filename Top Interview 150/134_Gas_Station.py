@@ -1,3 +1,6 @@
+#Easy
+#Array / String
+
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
         if sum(gas) < sum(cost):
@@ -16,11 +19,11 @@ class Solution:
                 current_tank = 0
         
         return starting_station if total_tank >= 0 else -1
-    ########################################
-    #smart version: it is proofed that:
-    # if sum of the gas provided is greater than or equal
-    # to the sum of the cost to travel between the stations
-    # then there is a solution for sure
+########################################
+#smart version: it is proofed that:
+# if sum of the gas provided is greater than or equal
+# to the sum of the cost to travel between the stations
+# then there is a solution for sure
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
         if sum(cost) > sum(gas):
